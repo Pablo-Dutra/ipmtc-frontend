@@ -14,7 +14,7 @@ async function resolveProblema(instancia) {
       let config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3000/resolveProblema",
+        url: process.env.VUE_APP_ROOT_API + '/resolveProblema',
         headers: { "Content-Type": "application/json" },
         data: data,
       };

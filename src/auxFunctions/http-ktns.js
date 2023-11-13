@@ -13,7 +13,7 @@ async function executaKtns(instancia, tarefas) {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://localhost:3000/ktns",
+      url: process.env.VUE_APP_ROOT_API + '/ktns',
       headers: { "Content-Type": "application/json" },
       data: data,
     };
